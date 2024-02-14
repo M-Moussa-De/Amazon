@@ -16,6 +16,24 @@ This Amazon clone is a replica of the popular e-commerce website, Amazon. It is 
 - **Styling:** TailwindCSS for the styling and layout.
 - **Backend:** C#, ASP.NetCore 8, EF and Identity for server-side operations.
 - **Payment:** Stripe.
-- **Database:** PostqreSQL for storing data.
+- **Database:** PostqreSQL for storing data and Redis for in-memory
 - **Authentication:** NextJS Auth for handling the user authentication.
 - **DevOps:** Docker, Docker-Compose, Git, Github, Jenkins.
+
+## Development Environment
+
+### API
+
+- To run the swagger locally
+
+```bash
+http://localhost:5000/swagger/index.html
+```
+
+### Web
+
+- To run the web UI locally
+
+```bash
+http://localhost:3000
+```

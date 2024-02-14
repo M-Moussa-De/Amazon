@@ -19,17 +19,15 @@ services:
     image: api-sv
     container_name: api-sv
     build:
-      context: ./api
+      context: ./API
       dockerfile: Dockerfile.dev
-    volumes:
-      - ./api:/app
     ports:
-      - 8000:8000
+      - 5000:5000
 
   # Database service
   db:
-    container_name: postgres-sv
     image: postgres:latest
+    container_name: postgres-sv
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -39,7 +37,7 @@ services:
     
   # Redis service
   redis:
-    container_name: redis-sv
     image: redis:latest
+    container_name: redis-sv
     ports:
       - 6379:6379
