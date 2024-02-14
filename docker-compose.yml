@@ -18,6 +18,9 @@ services:
   api:
     image: api-sv
     container_name: api-sv
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5000
     build:
       context: ./API
       dockerfile: Dockerfile.dev
